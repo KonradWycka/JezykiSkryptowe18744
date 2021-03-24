@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link  rel="stylesheet" href="css/style.css">
+<title>Formularz</title>
+<script src="js/forms.js"></script>
+</head>
+<body>
+<form class="form" id="contactForm" method="post" onsubmit="return checkForm();">
+<div class="form-row">
+
+<div class="form-group">
+<p id="errorName"> Podanie imienia jest wymagane! </p>
+ <label for="imienazwisko">Imie i Nazwisko:</label></div>
+<div><input type="text" name="imienazwisko" required id="imienazwisko" class="formField" data-error="Wpisz imie i nazwisko" tabindex="1"/></div>
+
+<div class="form-group">
+<p id="errorMail">Podanie emaila jest wymagane! </p>
+ <label for="email">Email:</label></div>
+<div> <input type="email" name="emial" required id="email" class="formField" data-error="Wpisz email" tabindex="2"/></div>
+
+<div class="form-group">
+<p id="errorInfo"> Podanie informacji jest wymagane! </p>
+<label for="info">Informacja:</label></div>
+<div> <textarea name="info" required id="info" class="formField" maxlength="250" data-error="wpisz informacje" tabindex="3"></textarea></div>
+<div><button type="submit" class="submit-btn">Wyślij</button></div>
+</div>
+</form>
+</body>
+</html>
